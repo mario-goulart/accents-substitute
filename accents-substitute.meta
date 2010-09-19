@@ -1,0 +1,8 @@
+;;; accents-substitute-latin1.meta -*- scheme -*-
+
+((egg "accents-substitute.egg")
+ (synopsis "Substitute accented characters in strings")
+ (author "Mario Domenech Goulart")
+ (license "BSD")
+ (category data)
+ (test-depends test))
