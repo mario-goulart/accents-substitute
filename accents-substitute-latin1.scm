@@ -58,7 +58,7 @@
   
 (define accents->html
   (map (lambda (item)
-         (cons (car item) (caddr item)))
+         (cons (regexp (car item)) (caddr item)))
        accents-conv))
 
 (define (accents-substitute str #!key mode)
