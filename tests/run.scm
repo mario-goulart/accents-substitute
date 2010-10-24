@@ -6,3 +6,5 @@
 (load "test-latin1")
 (load "test-utf8")
 (test-end)
+
+(unless (zero? (test-failure-count)) (exit 1))
