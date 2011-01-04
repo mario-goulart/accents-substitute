@@ -8,9 +8,9 @@
 
 (install-extension 'accents-substitute-latin1
                    '("accents-substitute-latin1.so" "accents-substitute-latin1.import.so")
-                   '((version "0.2")))
+                   '((version "0.3")))
 
 (install-extension 'accents-substitute-utf8
                    '("accents-substitute-utf8.so" "accents-substitute-utf8.import.so")
-                   '((version "0.2")))
+                   '((version "0.3")))
 

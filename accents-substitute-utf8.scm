@@ -49,7 +49,13 @@
     ("ü" "u" "&uuml;")    
     ("Ü" "U" "&Uuml;")    
     ("ç" "c" "&ccedil;")  
-    ("Ç" "C" "&Ccedil;")))
+    ("Ç" "C" "&Ccedil;")
+    ("İ" "I" "&#x0130")
+    ("ı" "i" "&#x0131")
+    ("Ğ" "G" "&#x011e")
+    ("ğ" "g" "&#x011f")
+    ("Ş" "S" "&#x015e")
+    ("ş" "s" "&#x015f")))
 
 (define accents->ascii
   (map (lambda (item)
