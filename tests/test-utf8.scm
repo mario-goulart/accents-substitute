@@ -48,6 +48,13 @@
 (test "-c-" (accents-substitute "-ç-"))
 (test "-C-" (accents-substitute "-Ç-"))
 (test "-CC-" (accents-substitute "-ÇÇ-"))
+(test "-II-" (accents-substitute "-İİ-"))
+(test "-ii-" (accents-substitute "-ıı-"))
+(test "-GG-" (accents-substitute "-ĞĞ-"))
+(test "-gg-" (accents-substitute "-ğğ-"))
+(test "-SS-" (accents-substitute "-ŞŞ-"))
+(test "-ss-" (accents-substitute "-şş-"))
+
 (test-end "UTF8 -> ASCII")
 
 (test-begin "UTF8 -> HTML")
@@ -98,4 +105,11 @@
 (test "-&ccedil;-" (accents-substitute "-ç-" mode: 'html))
 (test "-&Ccedil;-" (accents-substitute "-Ç-" mode: 'html))
 (test "-&Ccedil;&Ccedil;-" (accents-substitute "-ÇÇ-" mode: 'html))
+(test "-&#x0130-" (accents-substitute "-İ-" mode: 'html))
+(test "-&#x0131-" (accents-substitute "-ı-" mode: 'html))
+(test "-&#x011e-" (accents-substitute "-Ğ-" mode: 'html))
+(test "-&#x011f-" (accents-substitute "-ğ-" mode: 'html))
+(test "-&#x015e-" (accents-substitute "-Ş-" mode: 'html))
+(test "-&#x015f-" (accents-substitute "-ş-" mode: 'html))
+
 (test-end "UTF8 -> HTML")
