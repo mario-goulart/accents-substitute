@@ -6,4 +6,5 @@
  (license "BSD")
  (category data)
  (depends regex)
- (test-depends test))
+ (test-depends test)
+ (files "accents-substitute-utf8.scm" "accents-substitute-latin1.scm" "accents-substitute.meta" "accents-substitute.release-info" "tests/input.latin1" "tests/run.scm" "tests/test-utf8.scm" "tests/test-latin1.scm" "tests/input.utf8" "accents-substitute.setup"))
