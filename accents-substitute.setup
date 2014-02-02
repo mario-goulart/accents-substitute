@@ -9,15 +9,16 @@
 (compile -s -O3 -d1 -j accents-substitute-utf8 accents-substitute-utf8.scm)
 (compile -s -O3 -d1 accents-substitute-utf8.import.scm)
 
+(define version "0.4")
+
 (install-extension 'accents-substitute
                    '("accents-substitute.so" "accents-substitute.import.so")
-                   '((version "0.3")))
+                   `((version ,version)))
 
 (install-extension 'accents-substitute-latin1
                    '("accents-substitute-latin1.so" "accents-substitute-latin1.import.so")
-                   '((version "0.3")))
+                   `((version ,version)))
 
 (install-extension 'accents-substitute-utf8
                    '("accents-substitute-utf8.so" "accents-substitute-utf8.import.so")
-                   '((version "0.3")))
-
+                   `((version ,version)))
