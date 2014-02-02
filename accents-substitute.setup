@@ -1,13 +1,13 @@
 ;;; accents-substitute-latin1.setup -*- scheme -*-
 
-(compile -s -O2 -d1 -j accents-substitute accents-substitute.scm)
-(compile -s -O2 -d1 accents-substitute.import.scm)
+(compile -s -O3 -d1 -j accents-substitute accents-substitute.scm)
+(compile -s -O3 -d1 accents-substitute.import.scm)
 
-(compile -s -O2 -d1 -j accents-substitute-latin1 accents-substitute-latin1.scm)
-(compile -s -O2 -d1 accents-substitute-latin1.import.scm)
+(compile -s -O3 -d1 -j accents-substitute-latin1 accents-substitute-latin1.scm)
+(compile -s -O3 -d1 accents-substitute-latin1.import.scm)
 
-(compile -s -O2 -d1 -j accents-substitute-utf8 accents-substitute-utf8.scm)
-(compile -s -O2 -d1 accents-substitute-utf8.import.scm)
+(compile -s -O3 -d1 -j accents-substitute-utf8 accents-substitute-utf8.scm)
+(compile -s -O3 -d1 accents-substitute-utf8.import.scm)
 
 (install-extension 'accents-substitute
                    '("accents-substitute.so" "accents-substitute.import.so")
