@@ -9,7 +9,7 @@
 (compile -s -O3 -d1 -j accents-substitute accents-substitute.scm)
 (compile -s -O3 -d1 accents-substitute.import.scm)
 
-(define version "0.4")
+(define version "0.5")
 
 (install-extension 'accents-substitute
                    '("accents-substitute.so" "accents-substitute.import.so")
