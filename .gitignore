@@ -1,0 +1,12 @@
+accents-substitute-latin1.import.scm
+accents-substitute-latin1.import.so
+accents-substitute-latin1.link
+accents-substitute-latin1.so
+accents-substitute-latin1.static.o
+accents-substitute-utf8.import.scm
+accents-substitute-utf8.import.so
+accents-substitute-utf8.link
+accents-substitute-utf8.so
+accents-substitute-utf8.static.o
+accents-substitute.build.sh
+accents-substitute.install.sh
