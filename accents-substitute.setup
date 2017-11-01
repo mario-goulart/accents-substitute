@@ -22,3 +22,4 @@
 (install-extension 'accents-substitute-utf8
                    '("accents-substitute-utf8.so" "accents-substitute-utf8.import.so")
                    `((version ,version)))
+

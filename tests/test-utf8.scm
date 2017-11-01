@@ -1,4 +1,10 @@
-(use test accents-substitute-utf8)
+(cond-expand
+  (chicken-4
+   (use test accents-substitute-utf8))
+  (chicken-5
+   (import test accents-substitute-utf8))
+  (else
+   (error "Unsupported CHICKEN version.")))
 
 (test-begin "UTF8 -> ASCII")
 (test "-a-" (accents-substitute "-ã-"))

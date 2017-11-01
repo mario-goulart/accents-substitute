@@ -1,10 +1,14 @@
-#!/usr/bin/csi -script
-
-(use test)
+(cond-expand
+  (chicken-4
+   (use test))
+  (chicken-5
+   (import test))
+  (else
+   (error "Unsupported CHICKEN version.")))
 
 (test-begin)
-(load "test-latin1")
-(load "test-utf8")
+(load "test-latin1.scm")
+(load "test-utf8.scm")
 (test-end)
 
-(unless (zero? (test-failure-count)) (exit 1))
+(test-exit)
