@@ -1,4 +1,4 @@
-(use test accents-substitute-latin1)
+(import test accents-substitute-latin1)
 
 (test-begin "Latin1 -> ASCII")
 (test "-a-" (accents-substitute "-ã-"))

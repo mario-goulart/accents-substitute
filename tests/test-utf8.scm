@@ -1,4 +1,4 @@
-(use test accents-substitute-utf8)
+(import test accents-substitute-utf8)
 
 (test-begin "UTF8 -> ASCII")
 (test "-a-" (accents-substitute "-ã-"))
